@@ -1,0 +1,30 @@
+{
+    "name": "SBCamp/ElasticSearch",
+    "description": "An Elastic Search API written in PHP using Elastica for Symfony",
+    "keywords": ["elastic", "search", "elastica"],
+    "type": "symfony-bundle",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Rajbir Singh"
+        }
+    ],
+    "require": {
+        "php": ">=7.0",
+        "ruflin/elastica": "^6.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^6.5 || ^7.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "SBCamp\\ElasticSearchBundle\\": ""
+        }
+    },
+    "bin": ["bin/php-parse"],
+    "extra": {
+        "branch-alias": {
+            "dev-master": "4.0-dev"
+        }
+    }
+}

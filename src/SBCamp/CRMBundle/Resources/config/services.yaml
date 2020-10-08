@@ -1,0 +1,9 @@
+services:
+  sbcamp.crm.leads:
+    class: 'SBCamp\CRMBundle\Service\CRMLeads'
+    factory: 'SBCamp\CRMBundle\Service\CRMLeadsFactory:getCRMLeadsObject'
+    #arguments: [NULL, NULL, NULL, NULL]
+    arguments: ['@doctrine', NULL]
+
+  _defaults:
+    public: true

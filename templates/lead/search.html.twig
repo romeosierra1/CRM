@@ -1,0 +1,16 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    {{ form_start(form) }}
+    {{ form_widget(form) }}
+    {{ form_end(form) }}
+
+    {% for item in result %}
+        <div>
+            Age: {{ item.Age }} <br>
+            First name: {{ item.FirstName }} <br>
+            Last Name: {{ item.LastName }} <br>
+            <hr>
+        </div>
+    {% endfor %}
+{% endblock %}

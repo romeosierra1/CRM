@@ -1,0 +1,8 @@
+services:
+  sbcamp.es.conn:
+    class: 'SBCamp\ElasticSearchBundle\Service\ElasticSearchConnection'
+    factory: 'SBCamp\ElasticSearchBundle\Service\ElasticSearchClientFactory:getConnection'
+    arguments: [NULL, NULL]
+
+  _defaults:
+    public: true

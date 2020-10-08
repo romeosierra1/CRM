@@ -1,0 +1,25 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <form action="/field/view" method="post">
+        <div>
+            <table>
+                <tr>
+                    <td><label for="uid"></label>UID</td>
+                    <td><input id="uid" name="uid" type="text" required></td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <button>Submit</button>
+                        <a href="/field/">Go Back</a>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </form>
+    <div>
+        {% for item in data %}
+            <div>{{ item.columnName }}<a href="/field/delete/{{ item.fieldName }}">Remove</a></div>
+        {% endfor %}
+    </div>
+{% endblock %}

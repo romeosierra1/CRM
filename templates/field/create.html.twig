@@ -1,0 +1,41 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <form action="/field/create" method="post">
+        <div>
+            <table>
+                <tr>
+                    <td><label for="uid"></label>UID</td>
+                    <td><input id="uid" name="uid" type="text" required></td>
+                </tr>
+                <tr>
+                    <td><label for="columnName">Column Name</label></td>
+                    <td>
+                        <input id="columnName" name="columnName" type="text" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="dataType"> Data Type</label></td>
+                    <td>
+                        <select id="dataType" name="dataType">
+                            <option>text</option>
+                            <option>date</option>
+                            <option>double</option>
+                        </select></td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <button>Submit</button>
+                        <a href="/field/">Go Back</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        {{ message }}
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </form>
+
+{% endblock %}

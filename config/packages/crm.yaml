@@ -1,0 +1,5 @@
+crm:
+  global: 10
+  text: 5
+  double: 3
+  date: 2

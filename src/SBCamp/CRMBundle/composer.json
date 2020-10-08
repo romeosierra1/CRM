@@ -1,0 +1,30 @@
+{
+    "name": "SBCamp/CRMBundle",
+    "description": "A CRM Bundle written Symfony",
+    "keywords": ["bundle", "crm", "symfony"],
+    "type": "symfony-bundle",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Rajbir Singh"
+        }
+    ],
+    "require": {
+        "php": ">=7.0",
+        "symfony/orm-pack": "*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^6.5 || ^7.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "SBCamp\\CRMBundle": ""
+        }
+    },
+    "bin": ["bin/php-parse"],
+    "extra": {
+        "branch-alias": {
+            "dev-master": "4.0-dev"
+        }
+    }
+}
